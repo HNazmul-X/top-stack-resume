@@ -1,0 +1,36 @@
+header#pricing{
+   color:white;
+   
+}
+
+table{
+   thead{
+      .th-2{
+         width: 13%;
+         text-align: center;
+         padding:10px
+      }
+      .th-3{
+         width: 13%;
+         text-align: center;
+         padding:10px
+      }
+      .th-4{
+         width: 13%;
+         text-align: center;
+         padding:10px
+      }
+      .th-1{
+         width: 13%;
+         text-align: center;
+         padding:10px
+      }
+   }
+   tbody{
+      tr{
+         .td-2{
+            padding:10px;
+         }
+      }
+   }
+}

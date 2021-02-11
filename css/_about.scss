@@ -1,0 +1,60 @@
+body#about{
+    header{
+        background: url(../images/about_header.png) no-repeat center /cover;
+        background-color: rgba(0, 0, 0, 0.527);
+        background-blend-mode: soft-light;
+        color:white;
+        .box-area{
+            [class*="box-"]{
+                background: #000;
+                text-align: center;
+                padding:20px;
+                margin:10px;
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+#about-details{
+    .box-logo{
+        width:200px;
+        height: 200px;
+        background: lightskyblue;
+        margin:auto;
+        border-radius:30px;/* 
+        transform: translateY(-100px); */
+        margin-top:-75px;
+        margin-bottom:10px;
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+    }
+    .row.p{
+        background:lightblue;
+        margin: 4rem 0px;
+        border-radius: 30px;
+    }
+}
+
+#What-set{
+    ul{
+        padding:0px;
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+            &::before{
+                content: '\f005';
+                font-family: 'font awesome 5 free';
+                font-weight: bolder;
+                margin-right:10px;
+            }
+        }
+    }
+}

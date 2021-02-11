@@ -1,0 +1,75 @@
+.service-card-area{
+    position: relative;
+    height: 370px;
+    z-index: 1;
+    [class*="service-card-"]{
+        position: absolute;
+        height: 100%;
+        border-radius: 30px;
+    }
+    .service-card-2{
+        left:50%;
+        top:0px;
+        transform: translateX(-50%);
+        background:white;
+        box-shadow: inset 10px 10px 30px 10px lightgray;;
+        z-index: -3;
+        border-radius: 30px;
+        &:hover{
+            animation: come-out 0.5s ease-in-out forwards;
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.02),
+            0 12.5px 10px rgba(0, 0, 0, 0.025),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.03),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.036),
+            0 100px 80px rgba(0, 0, 0, 0.05);
+            .service-card-1{
+                left:0px;
+            }
+        }
+    }
+    .service-card-1 {
+        button{
+            display: inherit;
+            margin:auto;
+            color:white;
+        }
+    }
+    .service-card-3{
+        right:0px;
+    }
+}
+@keyframes come-out {
+    0%{
+        opacity: 0;
+        z-index: 0;
+        top:-10%;
+    }
+    50%{
+        opacity: 0.3;
+        z-index: 2;
+        top:-20%;
+    }
+    80%{
+        opacity: 0.8;
+        z-index: 3;
+        top:-10%;
+
+    }
+    100%{
+        opacity: 1;
+        z-index: 3;
+        top:0px;
+    }
+}
+
+#Carear-Consluting {
+    .row{
+        height:420px;
+    }
+}
+// #linkden-writing{
+//     .row{
+//         height:360px
+//     }
+// }
