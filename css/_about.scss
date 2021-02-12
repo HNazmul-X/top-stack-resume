@@ -6,14 +6,14 @@ body#about{
         color:white;
         .box-area{
             [class*="box-"]{
-                background: #000;
                 text-align: center;
                 padding:20px;
                 margin:10px;
                 img{
-                    width:100%;
-                    height:100%;
-                    object-fit: cover;
+                    width:80%;
+                    height:80%;
+                    margin:auto;
+                    display:inherit;
                 }
             }
         }
@@ -24,22 +24,34 @@ body#about{
     .box-logo{
         width:200px;
         height: 200px;
-        background: lightskyblue;
+        background: rgb(242, 250, 255);
         margin:auto;
         border-radius:30px;/* 
         transform: translateY(-100px); */
         margin-top:-75px;
         margin-bottom:10px;
         img{
-            width:100%;
-            height:100%;
-            object-fit: cover;
+            width:80%;
+            height:80%;
+            margin:auto;
+            display:inherit;
+            margin-top:15px;
         }
     }
     .row.p{
-        background:lightblue;
+        background:linear-gradient(rgb(213, 243, 253), rgb(199, 233, 245));
         margin: 4rem 0px;
         border-radius: 30px;
+        transition: 0.2s;
+        &:hover{
+            box-shadow: 0 -0.1px 1.7px rgba(0, 0, 0, 0.012),
+            0 1.5px 5.5px rgba(0, 0, 0, 0.023),
+            0 5.7px 12.6px rgba(0, 0, 0, 0.034),
+            0 14.8px 25.8px rgba(0, 0, 0, 0.045),
+            0 34.4px 52.3px rgba(0, 0, 0, 0.057),
+            0 100px 127px rgba(0, 0, 0, 0.07);
+
+        }
     }
 }
 

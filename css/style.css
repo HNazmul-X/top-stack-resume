@@ -612,6 +612,26 @@ footer .row ul li {
   font-size: 14px;
 }
 
+footer .icons i {
+  background: white;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+  margin: 5px;
+  height: 45px;
+  width: 45px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .icons i:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F39C11), to(#da820f));
+  background: linear-gradient(#F39C11, #da820f);
+  color: white;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 .review-card {
   background: -webkit-gradient(linear, left top, left bottom, from(#01a0c0), to(#31D2F2));
   background: linear-gradient(#01a0c0, #31D2F2);
@@ -632,23 +652,22 @@ body#about header {
 }
 
 body#about header .box-area [class*="box-"] {
-  background: #000;
   text-align: center;
   padding: 20px;
   margin: 10px;
 }
 
 body#about header .box-area [class*="box-"] img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: inherit;
 }
 
 #about-details .box-logo {
   width: 200px;
   height: 200px;
-  background: lightskyblue;
+  background: #f2faff;
   margin: auto;
   border-radius: 30px;
   /* 
@@ -658,16 +677,25 @@ body#about header .box-area [class*="box-"] img {
 }
 
 #about-details .box-logo img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: inherit;
+  margin-top: 15px;
 }
 
 #about-details .row.p {
-  background: lightblue;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d5f3fd), to(#c7e9f5));
+  background: linear-gradient(#d5f3fd, #c7e9f5);
   margin: 4rem 0px;
   border-radius: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#about-details .row.p:hover {
+  -webkit-box-shadow: 0 -0.1px 1.7px rgba(0, 0, 0, 0.012), 0 1.5px 5.5px rgba(0, 0, 0, 0.023), 0 5.7px 12.6px rgba(0, 0, 0, 0.034), 0 14.8px 25.8px rgba(0, 0, 0, 0.045), 0 34.4px 52.3px rgba(0, 0, 0, 0.057), 0 100px 127px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 -0.1px 1.7px rgba(0, 0, 0, 0.012), 0 1.5px 5.5px rgba(0, 0, 0, 0.023), 0 5.7px 12.6px rgba(0, 0, 0, 0.034), 0 14.8px 25.8px rgba(0, 0, 0, 0.045), 0 34.4px 52.3px rgba(0, 0, 0, 0.057), 0 100px 127px rgba(0, 0, 0, 0.07);
 }
 
 #What-set ul {
@@ -902,5 +930,139 @@ table tbody tr .td-2 {
 .slider .row .col-9 p {
   font-size: 12px;
   left: .8;
+}
+
+/* ==================================================================
+==========================================================================
+==============================================================================
+===================== Services     P A G E ============================= */
+body#reviews {
+  /* basic setup end */
+  /* header section */
+  /* header section end */
+  /* video-section  */
+}
+
+body#reviews header {
+  background: url(../images/ff.jpeg) no-repeat fixed center/cover;
+  background-color: rgba(0, 0, 0, 0.527);
+  background-blend-mode: soft-light;
+  padding: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+body#reviews .little-description {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+body#reviews .rating {
+  color: #92d3ff;
+}
+
+body#reviews .rating-star {
+  color: khaki;
+}
+
+body#reviews .review-number {
+  color: #ffd6d6;
+}
+
+body#reviews .review-boxes {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+body#reviews .review-boxes .box {
+  margin: 0 50px 50px 0;
+  width: 228px;
+  padding: 50px;
+  border-radius: 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.397)), to(rgba(255, 255, 255, 0.295)));
+  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.295));
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+body#reviews .review-boxes .box:last-child {
+  margin-right: 0;
+}
+
+body#reviews .video-section {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesRh0xQpJh8cf9xCPwoIy8fi57iyDsO1SGw&usqp=CAU) fixed;
+  color: white;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+body#reviews .arrow-sign {
+  font-size: 45px;
+}
+
+body#reviews .review-box {
+  margin: 25px 50px 0 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+body#reviews .review-box:first-child {
+  width: 100px;
+  height: 80px;
+  border-radius: 8px;
+  background: #0099FF;
+}
+
+body#reviews .total-rating {
+  font-size: 18px;
+  color: #fff;
+  margin-top: -20px;
+}
+
+body#reviews .date {
+  font-size: 10px;
+  color: lightgoldenrodyellow;
+}
+
+body#reviews .all-reviews {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  padding: 50px 50px;
+  font-family: 'Palanquin Dark', sans-serif;
+}
+
+body#reviews .reviews-box {
+  padding: 20px 20px;
+  width: 480px;
+  margin-bottom: 50px;
+  border: 5px solid rgba(250, 250, 250, 0.562);
+  -webkit-backdrop-filter: saturate(30%) invert(10%) blur(2px) grayscale(80%);
+          backdrop-filter: saturate(30%) invert(10%) blur(2px) grayscale(80%);
+}
+
+body#reviews .text-image {
+  padding: 50px;
+  border-radius: 10px;
+  width: 250px;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7));
+}
+
+body#reviews .reviews-box:nth-child(even) {
+  margin-left: auto;
+  border-bottom-right-radius: 40px;
+}
+
+body#reviews .reviews-box:nth-child(odd) {
+  border-top-left-radius: 40px;
 }
 /*# sourceMappingURL=style.css.map */

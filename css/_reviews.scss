@@ -1,0 +1,119 @@
+body#reviews{
+    /* basic setup end */
+    /* header section */
+    header {
+        background: url(../images/ff.jpeg) no-repeat fixed center /cover;
+        background-color: rgba(0, 0, 0, 0.527);
+        background-blend-mode: soft-light;
+        padding: 50px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .little-description {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .rating {
+        color: #92d3ff;
+    }
+
+    .rating-star {
+        color: khaki;
+    }
+
+    .review-number {
+        color: rgb(255, 214, 214);
+    }
+
+    .review-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .review-boxes .box {
+        margin: 0 50px 50px 0;
+        width: 228px;
+        padding: 50px;
+        border-radius: 18px;
+        background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.295));
+        backdrop-filter: blur(3px);
+    }
+
+    .review-boxes .box:last-child {
+        margin-right: 0;
+    }
+
+    /* header section end */
+    /* video-section  */
+
+    .video-section {
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesRh0xQpJh8cf9xCPwoIy8fi57iyDsO1SGw&usqp=CAU) fixed;
+        color: white;
+        text-align: center;
+        padding: 100px 0 100px 0;
+    }
+
+    .arrow-sign {
+        font-size: 45px;
+    }
+
+    .review-box {
+        margin: 25px 50px 0 0;
+        backdrop-filter: blur(10px);
+    }
+
+    .review-box:first-child {
+        width: 100px;
+        height: 80px;
+        border-radius: 8px;
+        background: #0099FF;
+    }
+
+    .total-rating {
+        font-size: 18px;
+        color: #fff;
+        margin-top: -20px;
+    }
+
+    .date {
+        font-size: 10px;
+        color: lightgoldenrodyellow;
+    }
+
+    .all-reviews {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        padding: 50px 50px;
+        font-family: 'Palanquin Dark', sans-serif;
+    }
+
+    .reviews-box {
+        padding: 20px 20px;
+        width: 480px;
+        margin-bottom: 50px;
+        border: 5px solid rgba(250, 250, 250, 0.562);
+        backdrop-filter: saturate(30%) invert(10%) blur(2px) grayscale(80%);
+
+    }
+
+    .text-image {
+        padding: 50px;
+        border-radius: 10px;
+        width: 250px;
+        margin: auto;
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7));
+    }
+
+    .reviews-box:nth-child(even) {
+        margin-left: auto;
+        border-bottom-right-radius: 40px;
+    }
+
+    .reviews-box:nth-child(odd) {
+        border-top-left-radius: 40px;
+    }
+}
