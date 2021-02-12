@@ -104,8 +104,8 @@ header {
     .how-it-work-card {
         width: 250px;
         padding: 20px;
-        background: grey;
         margin: 10px;
+        
 
     }
 }
@@ -401,6 +401,8 @@ section#how-it-word {
         .how-it-work-card {
             position: relative;
             z-index: 1;
+            background: lightblue;
+            border-radius:20px;
             
 
 
@@ -458,14 +460,14 @@ section#how-it-word {
 
             .img {
                 text-align: center;
-                border: 1px solid red;
                 border-radius: 50%;
                 width: 90px;
                 height: 90px;
                 margin: auto;
+                background:$golden-gd;
 
                 i {
-                    color: white;
+                    color:white;
                     font-size: 50px;
                     padding: 20px;
                 }

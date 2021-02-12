@@ -123,7 +123,6 @@ header .under-header p {
 .how-it-work-card-area .how-it-work-card {
   width: 250px;
   padding: 20px;
-  background: grey;
   margin: 10px;
 }
 
@@ -383,6 +382,8 @@ header .under-header p {
 section#how-it-word .how-it-work-card-area .how-it-work-card {
   position: relative;
   z-index: 1;
+  background: lightblue;
+  border-radius: 20px;
 }
 
 section#how-it-word .how-it-work-card-area .how-it-work-card:nth-child(1) .step-box {
@@ -437,11 +438,12 @@ section#how-it-word .how-it-work-card-area .how-it-work-card .step-box hr {
 
 section#how-it-word .how-it-work-card-area .how-it-work-card .img {
   text-align: center;
-  border: 1px solid red;
   border-radius: 50%;
   width: 90px;
   height: 90px;
   margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F39C11), to(#da820f));
+  background: linear-gradient(#F39C11, #da820f);
 }
 
 section#how-it-word .how-it-work-card-area .how-it-work-card .img i {
